@@ -5,8 +5,7 @@ This repository hosts the GitHub Pages website for the UAV Sensor Spoofing Detec
 
 
 ## Live Site
-Once deployed:
-https://YOUR_USERNAME.github.io/UAV-Sensor-Spoofing-Site
+https://s26-04-drone-spoof.github.io/website/
 
 
 ## Built With
