@@ -17,3 +17,21 @@ The system consists of three major subsystems:
 
 
 ## Data Flow
+
+## Control Flow
+- Operator configures spoof parameters from GCS
+- Simulink synchronizes system timing
+- Edge device reports inference status and health
+
+
+## Power Flow
+- Ground Station powered by AC system
+- Edge Device powered by 10,000mAh portable battery
+- HAL and sensors powered via regulated 5V/12V rails
+
+
+## Design Principles
+- Deterministic timing
+- Modular testing
+- Hardware-agnostic interfaces
+- Safety-first spoof isolation
