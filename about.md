@@ -8,10 +8,13 @@ nav_order: 2
 
 
 ## Team
-**Project Lead:** Izzy B.
-**Systems & Architecture:** Kush
-**Neural Networks & Edge Computing:** Team Member
-**Simulation & Integration:** Team Member
+**Project Lead:** Izzy
+**Systems & Architecture:** Carl
+**Neural Networks & Edge Computing:** Drew
+**Simulation & Integration:** Kush
+**Hardware & Signal Processing** Will
+**Embedded Systems & Communication** Sachel
+
 
 
 ## Sponsor
