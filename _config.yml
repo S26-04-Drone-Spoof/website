@@ -1,0 +1,11 @@
+title: UAV Sensor Spoofing Detection
+logo: /assets/images/banner.png
+description: Real-time UAV sensor spoofing simulation and neural network detection platform
+remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
+search_enabled: true
+nav_sort: case_insensitive
+footer_content: "UAV Sensor Spoofing Detection Project | Virginia Tech | Sponsored Research"
+repository: https://github.com/S26-04-Drone-Spoof/website
+plugins:
+- jekyll-feed
