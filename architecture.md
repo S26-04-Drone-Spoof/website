@@ -9,11 +9,10 @@ nav_order: 3
 
 ## High-Level Design
 The system consists of three major subsystems:
-
-
 1. **Ground Station (UE5 Virtual Environment)**
-2. **Simulink Bridge (Middleware + Timing Control)**
-3. **UAV Edge Device (Neural Network + Sensor Emulation)**
+   ![System Architecture](../assets/images/Ground_station.png)
+3. **Simulink Bridge (Middleware + Timing Control)**
+4. **UAV Edge Device (Neural Network + Sensor Emulation)**
 
 
 ## Data Flow
