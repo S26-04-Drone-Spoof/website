@@ -15,4 +15,4 @@ https://s26-04-drone-spoof.github.io/website/
 
 
 ## Maintainers
-Virginia Tech UAV Research Team
+Virginia Tech Team S26-04
