@@ -10,4 +10,4 @@ repository: https://github.com/S26-04-Drone-Spoof/website
 plugins:
 - jekyll-feed
 css:
-  - custom.css
+  - /assets/custom.css
