@@ -15,7 +15,7 @@ nav_order: 6
 
 ## Reports
 - Requirements Specification
-- Architecture Design Document
+- [Architecture Design Document](assets/Design.docx)
 - Verification Plan
 
 
