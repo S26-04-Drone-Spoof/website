@@ -9,3 +9,5 @@ footer_content: "UAV Sensor Spoofing Detection Project | Virginia Tech | Sponsor
 repository: https://github.com/S26-04-Drone-Spoof/website
 plugins:
 - jekyll-feed
+css:
+  - custom.css
