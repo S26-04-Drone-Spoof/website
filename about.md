@@ -8,12 +8,12 @@ nav_order: 2
 
 
 ## Team
-- **Project Lead:** Izzy
-- **Systems & Architecture:** Carl
-- **Neural Networks & Edge Computing:** Drew
-- **Simulation & Integration:** Kush
-- **Hardware & Signal Processing:** Will
-- **Embedded Systems & Communication:** Sachel
+- **Project Lead:** Izzy Burley
+- **Systems & Architecture:** Carl Holmberg 
+- **Neural Networks & Edge Computing:** Drew Schineller 
+- **Simulation & Integration:** Kush Parmar 
+- **Hardware & Signal Processing:** Will Field
+- **Embedded Systems & Communication:** Sachel Jetly
 
 
 
