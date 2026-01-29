@@ -74,7 +74,9 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 - Frame-based point cloud transport
 - Time-tagged packets with integrity verification
 - Bounded queues for real-time determinism
+
 ---
+
 ## Control Flow
 ### Operator-in-the-Loop Execution Model
 1. Operator configures spoof parameters in the Ground Station
