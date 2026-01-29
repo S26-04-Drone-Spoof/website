@@ -67,7 +67,7 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 
 ## System Data Flow
 
-**UE5 Virtual LiDAR + Spoof Profiles** -> TCP (Frame + CRC + Timestamp) -> **Simulink Middleware** -> Sensor-Accurate Packets -> **Edge Device (Jetson + HAL)** -> Inference + Health Metrics -> Telemetry Feedback → Ground Station
+**UE5 Virtual LiDAR + Spoof Profiles** → TCP (Frame + CRC + Timestamp) → **Simulink Middleware** → Sensor-Accurate Packets → **Edge Device (Jetson + HAL)** → Inference + Health Metrics → Telemetry Feedback → Ground Station
 
 ### Data Characteristics
 - Data Characteristics
