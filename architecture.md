@@ -84,12 +84,16 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 3. Edge device executes inference and decision logic
 4. Status, confidence, and system health are returned to the operator
 
+---
+
 ## Power Flow
 |Subsystem | Power | Source	| Regulation |
 |----------|-------|--------|------------|
-|Ground Station |	AC Mains	| System PSU |
-|Edge Device (Jetson) |	10,000mAh | Battery	12V / 5V DC Rails |
-|HAL + Sensors | Edge Device |	Regulated 5V / 3.3V |
+| Ground Station |	AC | Mains	| System PSU |
+| Edge Device (Jetson) |	10,000mAh | Battery |	12V / 5V DC Rails |
+| HAL + Sensors | Edge Device |	Regulated | 5V / 3.3V |
+
+---
 
 ## Design Principles
 ### Deterministic Timing
@@ -109,5 +113,6 @@ This architecture aligns directly with:
 
 Each subsystem maps to a formal Interface Control Document (ICD) defining message formats, timing constraints, and fault-handling behavior.
 
+---
 ## Architecture Summary
 This design establishes a closed-loop digital twin framework that enables high-fidelity spoof simulation, real-time edge inference, and safe system validation without physical RF emission — supporting scalable UAV security research under academic and regulatory constraints.
