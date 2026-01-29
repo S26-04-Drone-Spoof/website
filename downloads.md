@@ -15,8 +15,8 @@ nav_order: 6
 
 ## Reports
 - Requirements Specification
-- [Architecture Design Document]([assets/Design.docx)](https://github.com/S26-04-Drone_Spoof/website/raw/main/assets/Design.docx))
-- Verification Plan
+- [Architecture Design Document]([assets/Design.docx])(https://github.com/S26-04-Drone_Spoof/website/raw/main/assets/Design.docx)
+- [Verification Plan] ([assets/Verification&Validation.pdf])(https://github.com/S26-04-Drone_Spoof/website/raw/main/assets/Verification&Validation.pdf)
 
 
 ## Datasets
