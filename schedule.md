@@ -10,14 +10,14 @@ nav_order: 4
 ## Development Phases
 
 
-| Phase | Dates | Focus | Subsystems |
-|-------|-------|-------|------------|
-| 1a | Oct–Nov | Virtual Environment + Communication | UE5, Simulink |
-| 1b | Nov–Dec | Jetson Setup + NN Training | Edge Device, GCS |
-| 2 | Jan–Feb | LiDAR Vector Training + Procurement | Full System |
-| 3 | Feb–Mar | Dynamic Spoofing Simulations | Full System |
-| 4 | Mar–Apr | Physical System Testing | UAV Platform |
-| Final | Late April | Presentation & Reporting | Full System |
+| Phase | Focus | Subsystems |
+|-------|-------|------------|
+| 1a | Virtual Environment + Communication | UE5, Simulink |
+| 1b | Jetson Setup + NN Training | Edge Device, GCS |
+| 2 | LiDAR Vector Training + Procurement | Full System |
+| 3 | Dynamic Spoofing Simulations | Full System |
+| 4 | Physical System Testing | UAV Platform |
+| Final | Presentation & Reporting | Full System |
 
 
 ## Phase 1A – Virtual System Foundation (Jan 20 – Feb 2)
