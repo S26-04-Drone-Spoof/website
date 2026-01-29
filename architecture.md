@@ -67,11 +67,18 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 
 ## System Data Flow
 
-```text
-UE5 Virtual LiDAR + Spoof Profiles
-        ↓ TCP (Frame + CRC + Timestamp)
-Simulink Middleware
-        ↓ Sensor-Accurate Packets
-Edge Device (Jetson + HAL)
-        ↓ Inference + Health Metrics
-Telemetry Feedback → Ground Station
+**UE5 Virtual LiDAR + Spoof Profiles** -> TCP (Frame + CRC + Timestamp) -> **Simulink Middleware** -> Sensor-Accurate Packets -> **Edge Device (Jetson + HAL)** -> Inference + Health Metrics -> Telemetry Feedback → Ground Station
+
+### Data Characteristics
+- Data Characteristics
+- Frame-based point cloud transport
+- Time-tagged packets with integrity verification
+- Bounded queues for real-time determinism
+
+## Control Flow
+### Operator-in-the-Loop Execution Model
+1. Operator configures spoof parameters in the Ground Station
+2. Simulink synchronizes global timing and validates frames
+3. Edge device executes inference and decision logic
+4. Status, confidence, and system health are returned to the operator
+
