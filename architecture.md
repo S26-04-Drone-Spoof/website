@@ -12,63 +12,56 @@ This section documents the system-level architecture, data pathways, and design 
 
 ## High-Level Architecture Overview
 
-The system is composed of three tightly-coupled subsystems that form a closed-loop digital thread from **virtual sensing → middleware → edge inference → telemetry feedback**.
+The system is composed of three tightly-coupled subsystems that form a closed-loop digital thread:
+
+**Virtual sensing → Middleware → Edge inference → Telemetry feedback**
 
 ---
 
-### 1. Ground Station — UE5 Virtual Environment
-{: .d-flex .flex-wrap }
+## 1. Ground Station — UE5 Virtual Environment
 
 **Role:** Virtual sensor generator and operator control interface
 
-<p align="center">
-  <img src="/assets/Ground_station.png" width="80%">
-</p>
+![Ground Station Architecture](/assets/Ground_station.png)
 
-**Functions:**
-- Generates synthetic LiDAR point clouds using raycasting and scene geometry
-- Injects configurable spoofing profiles (range shift, ghost targets, dropout)
-- Streams time-tagged frames to Simulink over TCP
-- Provides operator control for attack parameters and scenario selection
+### Functions
+- Generates synthetic LiDAR point clouds using raycasting and scene geometry  
+- Injects configurable spoofing profiles (range shift, ghost targets, dropout)  
+- Streams time-tagged frames to Simulink over TCP  
+- Provides operator control for attack parameters and scenario selection  
 
 ---
 
-### 2. Simulink Bridge — Middleware & Timing Control
-{: .d-flex .flex-wrap }
+## 2. Simulink Bridge — Middleware & Timing Control
 
 **Role:** System synchronization and protocol translation layer
 
-<p align="center">
-  <img src="/assets/Simulink.png" width="80%">
-</p>
+![Simulink Bridge Architecture](/assets/Simulink.png)
 
-**Functions:**
-- Validates incoming frames using CRC and sequence counters
-- Enforces deterministic timing and buffering
-- Converts virtual frames into sensor-accurate message formats
-- Routes telemetry and inference results back to the GCS
+### Functions
+- Validates incoming frames using CRC and sequence counters  
+- Enforces deterministic timing and buffering  
+- Converts virtual frames into sensor-accurate message formats  
+- Routes telemetry and inference results back to the GCS  
 
 ---
 
-### 3. UAV Edge Device — Neural Inference & Sensor Emulation
-{: .d-flex .flex-wrap }
+## 3. UAV Edge Device — Neural Inference & Sensor Emulation
 
 **Role:** Real-time spoof detection and hardware abstraction
 
-<p align="center">
-  <img src="/assets/Edge.png" width="80%">
-</p>
+![Edge Device Architecture](/assets/Edge.png)
 
-**Hardware Stack:**
-- **Jetson Nano / Orin Nano** — Edge AI inference
-- **Raspberry Pi / MCU HAL** — Sensor bus emulation
-- **Livox LiDAR** — Real-world signal validation
+### Hardware Stack
+- **Jetson Nano / Orin Nano** — Edge AI inference  
+- **Raspberry Pi / MCU HAL** — Sensor bus emulation  
+- **Livox LiDAR** — Real-world signal validation  
 
-**Functions:**
-- Runs quantized neural network for spoof classification
-- Emulates sensor buses (UART, I²C, SPI)
-- Publishes telemetry, health, and confidence metrics
-- Engages fallback logic under real-time constraint violations
+### Functions
+- Runs quantized neural network for spoof classification  
+- Emulates sensor buses (UART, I²C, SPI)  
+- Publishes telemetry, health, and confidence metrics  
+- Engages fallback logic under real-time constraint violations  
 
 ---
 
