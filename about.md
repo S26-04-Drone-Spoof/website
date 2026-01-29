@@ -28,5 +28,5 @@ The mission is to improve awareness of sensor spoofing threats while developing 
 ## Scope
 - Virtual sensor generation and spoof injection
 - Embedded AI for real-time classification
-- FAA-compliant UAV testing environments
+- Emulated done flight and esting environments
 - Modular system architecture for future research
