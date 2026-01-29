@@ -7,12 +7,16 @@ nav_order: 7
 # Contact Information
 
 
-## Team
-Emails: izzy@vt.edu, 
-
+## Team 
+- **Carl Holmberg** - cholmberg@vt.edu
+- **Izzy Burley**  - izzyburley@vt.edu
+- **Drew Schniller** - aschinel@vt.edu
+- **Kush Pamar** - parmkus26@vt.edu
+- **Sachel Jetley** - sacheljetly@vt.edu
+- **Will Field** - jwill22@vt.edu
 
 ## Sponsor
-U.S. Navy Research Partner
+U.S. Navy Research Partner (NAVAIR)
 
 
 ## Faculty Mentor
