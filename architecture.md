@@ -74,7 +74,7 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 - Frame-based point cloud transport
 - Time-tagged packets with integrity verification
 - Bounded queues for real-time determinism
-
+---
 ## Control Flow
 ### Operator-in-the-Loop Execution Model
 1. Operator configures spoof parameters in the Ground Station
@@ -82,3 +82,29 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 3. Edge device executes inference and decision logic
 4. Status, confidence, and system health are returned to the operator
 
+## Power Flow
+|Subsystem	| Power |Source	| Regulation|
+|Ground Station |	AC Mains	| System PSU |
+|Edge Device (Jetson) |	10,000mAh | Battery	12V / 5V DC Rails |
+|HAL + Sensors | Edge Device |	Regulated 5V / 3.3V |
+
+## Design Principles
+### Deterministic Timing
+Fixed-latency pipelines and bounded buffering to maintain real-time inference
+### Modular Validation
+Each subsystem testable independently (UE5, Simulink, Edge)
+### Hardware Abstraction
+Sensor protocols emulated via HAL to support rapid platform changes
+### Safety-First Spoof Isolation
+Spoofing remains confined to simulation and HIL paths — no RF emissions
+
+### Traceability to Design Documents
+This architecture aligns directly with:
+- [System Requirements Specification (SRS)]()
+- [Architecture Design Document (ADD)]()
+- [Verification & Validation Matrix (V&V)]()
+
+Each subsystem maps to a formal Interface Control Document (ICD) defining message formats, timing constraints, and fault-handling behavior.
+
+## Architecture Summary
+This design establishes a closed-loop digital twin framework that enables high-fidelity spoof simulation, real-time edge inference, and safe system validation without physical RF emission — supporting scalable UAV security research under academic and regulatory constraints.
