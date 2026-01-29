@@ -10,8 +10,8 @@ nav_order: 7
 ## Team 
 - **Carl Holmberg** - cholmberg@vt.edu
 - **Izzy Burley** (Project Lead)  - izzyburley@vt.edu
-- **Drew Schniller** - aschinel@vt.edu
-- **Kush Pamar** - parmkus26@vt.edu
+- **Drew Schineller** - aschinel@vt.edu
+- **Kush Parmar** - parmkus26@vt.edu
 - **Sachel Jetley** - sacheljetly@vt.edu
 - **Will Field** - jwill22@vt.edu
 
