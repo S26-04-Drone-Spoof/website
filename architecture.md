@@ -105,6 +105,8 @@ Sensor protocols emulated via HAL to support rapid platform changes
 ### Safety-First Spoof Isolation
 Spoofing remains confined to simulation and HIL paths — no RF emissions
 
+---
+
 ### Traceability to Design Documents
 This architecture aligns directly with:
 - [System Requirements Specification (SRS)]()
