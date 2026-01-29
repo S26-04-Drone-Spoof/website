@@ -90,12 +90,14 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 ---
 
 ## Power Flow
+
 | Subsystem | Power | Source | Regulation |
 |-----------|--------|------------|------------------|
 | Ground Station | AC | Mains | System PSU |
 | Edge Device (Jetson) | 10,000mAh | Battery | 12V / 5V DC Rails |
 | Livox LiDAR | Edge Device | DC Rail | 12V Regulated |
 | HAL + MCU | Edge Device | DC Rail | 5V / 3.3V |
+
 
 ---
 
