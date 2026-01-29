@@ -85,7 +85,8 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 4. Status, confidence, and system health are returned to the operator
 
 ## Power Flow
-|Subsystem	| Power |Source	| Regulation|
+|Subsystem | Power | Source	| Regulation |
+|----------|-------|--------|------------|
 |Ground Station |	AC Mains	| System PSU |
 |Edge Device (Jetson) |	10,000mAh | Battery	12V / 5V DC Rails |
 |HAL + Sensors | Edge Device |	Regulated 5V / 3.3V |
