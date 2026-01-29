@@ -1,4 +1,4 @@
-# UAV Sensor Spoofing Detection Site
+# Low-cost Smart Sensor Spoofer on Unmanned Air System Official Project Site
 
 
 This repository hosts the GitHub Pages website for the UAV Sensor Spoofing Detection Project.
