@@ -13,7 +13,7 @@ This project builds upon [Project AirSim](https://github.com/iamaisim), maintain
 
 ## Team
 
-![Team Photo](assets/5712x4284.jpeg)
+![Team Photo](assets/TeamPic.png)
 
 - **Project Lead:** Izzy Burley
 - **Systems & Architecture:** Carl Holmberg 
