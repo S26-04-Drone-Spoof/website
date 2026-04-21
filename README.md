@@ -1,8 +1,6 @@
-# Low-cost Smart Sensor Spoofer on Unmanned Air System Official Project Site
-
+# Low-Cost Neural Network Spoof Detection for Unmanned Aerial Systems (UAS) Official Project Site
 
 This repository hosts the GitHub Pages website for the UAV Sensor Spoofing Detection Project.
-
 
 ## Live Site
 https://s26-04-drone-spoof.github.io/website/
