@@ -5,8 +5,7 @@ nav_order: 1
 ---
 
 
-# Low-cost Smart Sensor Spoofer on Unmanned Air System
-
+# Low-Cost Neural Network Spoof Detection for Unmanned Aerial Systems (UAS)​
 
 This project develops a **real-time, hardware-in-the-loop (HIL) test platform** for simulating and detecting spoofed UAV sensor data. The system combines a virtual sensing environment, a real-time middleware bridge, and an onboard neural network to evaluate how LiDAR, GPS, and multi-sensor data can be manipulated and reliably identified in adversarial conditions.
 
