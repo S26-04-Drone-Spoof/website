@@ -28,16 +28,16 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 ### Functions
 - Generates synthetic LiDAR point clouds using raycasting and scene geometry  
 - Injects configurable spoofing profiles (range shift, ghost targets, dropout)  
-- Streams time-tagged frames to Simulink over TCP  
+- Streams time-tagged frames over TCP  
 - Provides operator control for attack parameters and scenario selection  
 
 ---
 
-## 2. Simulink Bridge — Middleware & Timing Control
+## 2. Software Bridge — Middleware & Timing Control
 
 **Role:** System synchronization and protocol translation layer
 
-![Simulink Bridge Architecture](/assets/Simulink.png)
+![Software Bridge Architecture](/assets/Simulink.png)
 
 ### Functions
 - Validates incoming frames using CRC and sequence counters  
@@ -68,7 +68,7 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 
 ## System Data Flow
 
-**UE5 Virtual LiDAR + Spoof Profiles** → TCP (Frame + CRC + Timestamp) → **Simulink Middleware** → Sensor-Accurate Packets → **Edge Device (Jetson + HAL)** → Inference + Health Metrics → Telemetry Feedback → Ground Station
+**UE5 Virtual LiDAR + Spoof Profiles** → TCP (Frame + CRC + Timestamp) → **Software Middleware** → Sensor-Accurate Packets → **Edge Device (Jetson + HAL)** → Inference + Health Metrics → Telemetry Feedback → Ground Station
 
 ![Hardware Data Flow](/assets/WiringDiagram.png)
 
@@ -83,7 +83,7 @@ The system is composed of three tightly-coupled subsystems that form a closed-lo
 ## Control Flow
 ### Operator-in-the-Loop Execution Model
 1. Operator configures spoof parameters in the Ground Station
-2. Simulink synchronizes global timing and validates frames
+2. Raspberry Pi synchronizes global timing and validates frames
 3. Edge device executes inference and decision logic
 4. Status, confidence, and system health are returned to the operator
 

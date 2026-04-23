@@ -34,9 +34,8 @@ This project develops a **real-time, hardware-in-the-loop (HIL) test platform** 
 ## System Overview
 The platform integrates:
 - **Unreal Engine 5** for virtual LiDAR generation and spoofing
-- **Simulink Bridge** for real-time data synchronization
+- **Raspberry Pi Bridge** for moving scans from UE5 to Edge Device
 - **UAV Edge Device (Jetson)** for neural inference
-- **Ground Control Station** for configuration and monitoring
 
 
 Use this site to explore the architecture, schedule, testing strategy, and project resources.
