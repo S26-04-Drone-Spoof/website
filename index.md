@@ -11,15 +11,10 @@ nav_order: 1
 This project develops a **real-time, hardware-in-the-loop (HIL) test platform** for simulating and detecting spoofed UAV sensor data. The system combines a virtual sensing environment, a real-time middleware bridge, and an onboard neural network to evaluate how LiDAR, GPS, and multi-sensor data can be manipulated and reliably identified in adversarial conditions.
 
 <div style="text-align:center; margin-bottom: 30px;">
-  <iframe 
-    width="100%" 
-    height="450"
-    src="https://www.youtube.com/embed/VIDEO_ID"
-    title="Project Demo"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+  <img 
+    src="assets/project-airsim-uam-takeoff-2022-10-20-22-52-03-1197x672-ea6aa8d1fadd.jpg"
+    alt="Project AirSim UAM"
+    style="width:100%; max-width:1197px;">
 </div>
 
 
